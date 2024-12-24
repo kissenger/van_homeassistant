@@ -11,7 +11,7 @@ services:
             - NET_ADMIN
             - NET_RAW
         volumes:
-            - /home/gordon/Documents/docker/homeassistant/data:/config
+            - /home/gordon/proj/homeassistant/data:/config
             - /var/run/dbus:/var/run/dbus:ro
         restart: unless-stopped
 
@@ -19,8 +19,8 @@ services:
         image: eclipse-mosquitto
         container_name: mosquitto
         volumes:
-            - /home/gordon/Documents/docker/mosquitto:/mosquitto
-            - /home/gordon/Documents/docker/mosquitto/data:/mosquitto/data
+            - /home/gordon/proj/mosquitto:/mosquitto
+            - /home/gordon/proj/mosquitto/data:/mosquitto/data
             - /opt/mosquitto/log:/mosquitto/log
         ports:
             - 1883:1883

@@ -32,6 +32,13 @@
             "should_expose": true
           }
         }
+      },
+      "sensor.fridge_vent_temperature": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
       }
     }
   }

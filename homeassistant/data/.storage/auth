@@ -194,9 +194,26 @@
         "access_token_expiration": 1800.0,
         "token": "eff40e10c563390e86e2c230a578d623e9d6b376387e806df934efbc87defb381dbe96c3281f544a91905bc4243022460a90c215061258fea9b414e5edb93b5b",
         "jwt_key": "d4f3230ce664d5f95b0b9dd5100225bfadf5b66b7aab13ed8aa4b1cb7f462a10369f1511bfda1fd2ca63d2ce3b463c7cca97bcf0df19317b3dc959dd388b80b0",
-        "last_used_at": "2024-12-24T22:04:43.968351+00:00",
+        "last_used_at": "2024-12-24T22:43:40.819621+00:00",
         "last_used_ip": "192.168.1.64",
-        "expire_at": 1742853883.968351,
+        "expire_at": 1742856220.819621,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.5"
+      },
+      {
+        "id": "eea6b8fbd84b4030addeafca293db862",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-24T22:40:44.866332+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c9956aca225a2020af7c07ff97c2ebf30a644fcce5afb53667ae2eb21d641993203b65e8836aabdc867ffad2c0935c63e6aae50f37224ec4cc4f22872dbc84d5",
+        "jwt_key": "0fc1c012fa9a7a761d4ff3d2677cafdc9bb9508004d2da77cf9d2b530638fb27a66b1a55fbafbe0de8f3d159adc51297d41081328c62d2f5ef9c76ae1998ea96",
+        "last_used_at": "2024-12-24T22:40:44.866999+00:00",
+        "last_used_ip": "192.168.1.172",
+        "expire_at": 1742856044.866999,
         "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
         "version": "2024.12.5"
       }

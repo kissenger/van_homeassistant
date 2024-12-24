@@ -4,60 +4,76 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.gordon","state":"unknown","attributes":{"editable":true,"id":"gordon","device_trackers":[],"source":"person.gordon","user_id":"0effdb90c3294166964c081a0e0f86ee","friendly_name":"gordon"},"last_changed":"2024-12-24T22:08:27.060517+00:00","last_reported":"2024-12-24T22:08:27.060517+00:00","last_updated":"2024-12-24T22:08:27.060517+00:00","context":{"id":"01JFXBDNXM24W265Y0S1AWZ1Y5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.gordon","state":"unknown","attributes":{"editable":true,"id":"gordon","device_trackers":[],"user_id":"0effdb90c3294166964c081a0e0f86ee","friendly_name":"gordon"},"last_changed":"2024-12-24T22:48:04.486788+00:00","last_reported":"2024-12-24T22:48:11.262488+00:00","last_updated":"2024-12-24T22:48:11.262488+00:00","context":{"id":"01JFXDPE7YTKVGEHECTBQHG21S","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-24T22:08:34.700715+00:00","last_reported":"2024-12-24T22:08:34.700715+00:00","last_updated":"2024-12-24T22:08:34.700715+00:00","context":{"id":"01JFXBDXCC5QHGN1AANA5P25PS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-24T22:48:07.712189+00:00","last_reported":"2024-12-24T22:48:07.712189+00:00","last_updated":"2024-12-24T22:48:07.712189+00:00","context":{"id":"01JFXDPAS0Y16WRZMYNFPRJCZH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"automation.ha_startup","state":"on","attributes":{"id":"1734790026866","last_triggered":"2024-12-24T22:04:28.312389+00:00","mode":"single","current":0,"friendly_name":"HA Startup"},"last_changed":"2024-12-24T22:08:39.067461+00:00","last_reported":"2024-12-24T22:08:39.067461+00:00","last_updated":"2024-12-24T22:08:39.067461+00:00","context":{"id":"01JFXBE1MVES15MRGVA3KJWN9M","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-24T22:48:08.759569+00:00","last_reported":"2024-12-24T22:48:08.759569+00:00","last_updated":"2024-12-24T22:48:08.759569+00:00","context":{"id":"01JFXDPBSQES15MRGVA3KJWN9M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-24T22:08:39.095999+00:00","last_reported":"2024-12-24T22:08:39.095999+00:00","last_updated":"2024-12-24T22:08:39.095999+00:00","context":{"id":"01JFXBE1NQD1MKFXJZTTKZ8CRX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.ha_startup","state":"on","attributes":{"id":"1734790026866","last_triggered":"2024-12-24T22:48:11.286562+00:00","mode":"single","current":0,"friendly_name":"HA Startup"},"last_changed":"2024-12-24T22:48:11.121891+00:00","last_reported":"2024-12-24T22:48:11.316317+00:00","last_updated":"2024-12-24T22:48:11.316317+00:00","context":{"id":"01JFXDPE8P4ZZ5PYYGTX3YVF5A","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"number.brightness_slider","state":"unavailable","attributes":{"min":0.0,"max":100.0,"step":1.0,"mode":"slider","friendly_name":"Brightness Slider"},"last_changed":"2024-12-24T22:08:40.580507+00:00","last_reported":"2024-12-24T22:08:40.590998+00:00","last_updated":"2024-12-24T22:08:40.580507+00:00","context":{"id":"01JFXBE344QM8D07E8FB4XW83N","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.fridge_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Temperature"},"last_changed":"2024-12-24T22:50:58.614934+00:00","last_reported":"2024-12-24T22:50:58.614934+00:00","last_updated":"2024-12-24T22:50:58.614934+00:00","context":{"id":"01JFXDVHNPQNKZ4F6CDBDWH2Y5","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "10.062",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.fridge_vent_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Vent Temperature"},"last_changed":"2024-12-24T22:50:58.614350+00:00","last_reported":"2024-12-24T22:50:58.614350+00:00","last_updated":"2024-12-24T22:50:58.614350+00:00","context":{"id":"01JFXDVHNP241WEADN0CSAVAXN","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "20.687",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
+    },
+    {
+      "state": {"entity_id":"number.brightness_slider","state":"unavailable","attributes":{"min":0.0,"max":100.0,"step":1.0,"mode":"slider","friendly_name":"Brightness Slider"},"last_changed":"2024-12-24T22:50:58.619548+00:00","last_reported":"2024-12-24T22:50:58.619548+00:00","last_updated":"2024-12-24T22:50:58.619548+00:00","context":{"id":"01JFXDVHNVEYQEQM3K5718QP4N","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_max_value": 100.0,
         "native_min_value": 0.0,
         "native_step": 1.0,
         "native_unit_of_measurement": null,
-        "native_value": null
+        "native_value": 24
       },
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"switch.ceiling_lights","state":"unavailable","attributes":{"assumed_state":true,"icon":"mdi:lightbulb","friendly_name":"Ceiling Lights"},"last_changed":"2024-12-24T22:08:40.583475+00:00","last_reported":"2024-12-24T22:08:40.591087+00:00","last_updated":"2024-12-24T22:08:40.583475+00:00","context":{"id":"01JFXBE347MBZ9YXKGCRQE27PX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.ceiling_lights","state":"unavailable","attributes":{"assumed_state":true,"device_class":"switch","icon":"mdi:lightbulb","friendly_name":"Ceiling Lights"},"last_changed":"2024-12-24T22:50:58.618925+00:00","last_reported":"2024-12-24T22:50:58.618925+00:00","last_updated":"2024-12-24T22:50:58.618925+00:00","context":{"id":"01JFXDVHNT3JBAGEXT5NGZXC8D","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"switch.table_lights","state":"unavailable","attributes":{"assumed_state":true,"friendly_name":"Table Lights"},"last_changed":"2024-12-24T22:08:40.584233+00:00","last_reported":"2024-12-24T22:08:40.591144+00:00","last_updated":"2024-12-24T22:08:40.584233+00:00","context":{"id":"01JFXBE348W7CZNKS8QM88VYZ4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.table_lights","state":"unavailable","attributes":{"assumed_state":true,"device_class":"switch","friendly_name":"Table Lights"},"last_changed":"2024-12-24T22:50:58.620053+00:00","last_reported":"2024-12-24T22:50:58.620053+00:00","last_updated":"2024-12-24T22:50:58.620053+00:00","context":{"id":"01JFXDVHNWH2TVCEGRWZEHD52Y","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"switch.bed_lights","state":"unavailable","attributes":{"assumed_state":true,"friendly_name":"Bed Lights"},"last_changed":"2024-12-24T22:08:40.584691+00:00","last_reported":"2024-12-24T22:08:40.591197+00:00","last_updated":"2024-12-24T22:08:40.584691+00:00","context":{"id":"01JFXBE3484JM7ENS5GZPDX4FT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.bed_lights","state":"unavailable","attributes":{"assumed_state":true,"device_class":"switch","friendly_name":"Bed Lights"},"last_changed":"2024-12-24T22:50:58.632967+00:00","last_reported":"2024-12-24T22:50:58.632967+00:00","last_updated":"2024-12-24T22:50:58.632967+00:00","context":{"id":"01JFXDVHP8BMHBNQ7GYF5Z6TGC","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"switch.fairy_lights","state":"unavailable","attributes":{"assumed_state":true,"friendly_name":"Fairy Lights"},"last_changed":"2024-12-24T22:08:40.585103+00:00","last_reported":"2024-12-24T22:08:40.591249+00:00","last_updated":"2024-12-24T22:08:40.585103+00:00","context":{"id":"01JFXBE349E3BAY1TW8F81K1T1","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.fairy_lights","state":"unavailable","attributes":{"assumed_state":true,"device_class":"switch","friendly_name":"Fairy Lights"},"last_changed":"2024-12-24T22:50:58.633179+00:00","last_reported":"2024-12-24T22:50:58.633179+00:00","last_updated":"2024-12-24T22:50:58.633179+00:00","context":{"id":"01JFXDVHP97WGBK83ZYRNYEH60","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
-      "state": {"entity_id":"switch.outside_lights","state":"unavailable","attributes":{"assumed_state":true,"friendly_name":"Outside Lights"},"last_changed":"2024-12-24T22:08:40.585495+00:00","last_reported":"2024-12-24T22:08:40.591301+00:00","last_updated":"2024-12-24T22:08:40.585495+00:00","context":{"id":"01JFXBE3495XMF3YSR0BYSNFA0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.outside_lights","state":"unavailable","attributes":{"assumed_state":true,"device_class":"switch","friendly_name":"Outside Lights"},"last_changed":"2024-12-24T22:50:58.620452+00:00","last_reported":"2024-12-24T22:50:58.620452+00:00","last_updated":"2024-12-24T22:50:58.620452+00:00","context":{"id":"01JFXDVHNW0VY7CANMARNESCMX","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-24T22:08:40.606956+00:00"
+      "last_seen": "2024-12-24T22:50:58.732811+00:00"
     },
     {
       "state": {"entity_id":"light.brightness","state":"on","attributes":{"supported_color_modes":["brightness"],"color_mode":"brightness","brightness":117,"assumed_state":true,"friendly_name":"Brightness","supported_features":0},"last_changed":"2024-12-21T20:46:00.349797+00:00","last_reported":"2024-12-21T20:46:00.672566+00:00","last_updated":"2024-12-21T20:46:00.672566+00:00","context":{"id":"01JFNFGJERX4HHFCFFN1MS6YEB","parent_id":null,"user_id":"0effdb90c3294166964c081a0e0f86ee"}},

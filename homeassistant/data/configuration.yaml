@@ -15,6 +15,7 @@ mqtt:
         unique_id: ceiling_light
         name: "Ceiling Lights"
         command_topic: "lights/ceiling"
+        device_class: "switch"
         availability:
             - topic: "gpio/available"
         payload_on: "ON"
@@ -28,6 +29,7 @@ mqtt:
         unique_id: table_light
         name: "Table Lights"
         command_topic: "lights/table"
+        device_class: "switch"
         availability:
             - topic: "gpio/available"
         payload_on: "ON"
@@ -41,6 +43,7 @@ mqtt:
         unique_id: bed_lights
         name: "Bed Lights"
         command_topic: "lights/beds"
+        device_class: "switch"
         availability:
             - topic: "gpio/available"
         payload_on: "ON"
@@ -54,6 +57,7 @@ mqtt:
         unique_id: fairy_light
         name: "Fairy Lights"
         command_topic: "lights/fairy"
+        device_class: "switch"
         availability:
             - topic: "gpio/available"
         payload_on: "ON"
@@ -67,6 +71,7 @@ mqtt:
         unique_id: outside_light
         name: "Outside Lights"
         command_topic: "lights/outside"
+        device_class: "switch"
         availability:
             - topic: "gpio/available"
         payload_on: "ON"
@@ -87,5 +92,25 @@ mqtt:
         max: 100
         step: 1
         mode: slider
+    - sensor:
+        unique_id: "fridge_temperature"
+        name: "Fridge Temperature"
+        device_class: "temperature"
+        state_class: "measurement"
+        state_topic: "temperature/fridge"
+        suggested_display_precision: 1
+        unit_of_measurement: "°C"
+        availability:
+           - topic: "gpio/available"
+    - sensor:
+        unique_id: "fridge_vent_temperature"
+        name: "Fridge Vent Temperature"
+        device_class: "temperature"
+        state_class: "measurement"
+        state_topic: "temperature/fridge_vent"
+        suggested_display_precision: 1
+        unit_of_measurement: "°C"
+        availability:
+           - topic: "gpio/available"
         
         

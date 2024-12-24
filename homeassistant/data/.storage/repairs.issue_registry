@@ -38,6 +38,13 @@
         "domain": "mqtt",
         "is_persistent": false,
         "issue_id": "-0x8b855ce0b56e02e"
+      },
+      {
+        "created": "2024-12-24T22:46:54.007408+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "-0x18ae6cb3aee34773"
       }
     ]
   }

@@ -1,0 +1,15 @@
+[Unit]
+Description = Python script monitoring GPIO pins for home assistant
+
+[Service]
+Type = simple
+ExecStart = python /home/gordon/Documents/docker/python/pygpio.py
+WorkingDirectory = /home/gordon/Documents/docker/python
+User = gordon
+Restart = always
+RestartSec = 15
+SyslogIdentifier = pygpio
+KillSignal=SIGINT
+
+[Install]
+WantedBy = multi-user.target

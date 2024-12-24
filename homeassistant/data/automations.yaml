@@ -1,0 +1,15 @@
+- id: '1734790026866'
+  alias: HA Startup
+  description: pings pygpio on startup
+  triggers:
+  - trigger: homeassistant
+    event: start
+  conditions: []
+  actions:
+  - action: mqtt.publish
+    metadata: {}
+    data:
+      evaluate_payload: false
+      qos: '0'
+      topic: pygpio/ping
+  mode: single

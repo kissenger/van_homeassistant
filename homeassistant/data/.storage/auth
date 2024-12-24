@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "6f4e83f6972c449aba4de01fd188b3d1",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "f3fefef5280b4911adf4999530667438",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Cast",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "0effdb90c3294166964c081a0e0f86ee",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "gordon",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "8aebce8d07e9433fbae05a7617b4960b",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "gordon"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "52847db6626a4842a02f4806cec3adc2",
+        "user_id": "6f4e83f6972c449aba4de01fd188b3d1",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2024-12-17T21:11:02.713979+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "b424725ee53b5d410f763d382f6485d8aca3e891d0f59b33e955a7cb927e4d80162b3da2f1cc01c1cde99621e792d5d78d2cbafc4c0305fc3290fd6cdadd9f37",
+        "jwt_key": "73b0321bac1c751a89c8ca32eddec5251b2141e4b8231d6099a8ee8e8263da5e2f52e91cfd2a624c1a973c13b03f408ce34cd40e77db1cb5e4ebed3d5ef99a64",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.12.3"
+      },
+      {
+        "id": "ed17b151a08249ba81f882967b8e6b45",
+        "user_id": "f3fefef5280b4911adf4999530667438",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2024-12-17T21:11:34.088085+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c0bee6343695d53b4736e621429d00c3bc9ea1e4dc2b8350de5ab8e52b0257181f83bf50a20c40ed91776d2c1fa60e4090e555afabf30b433125becd41136759",
+        "jwt_key": "f83a20760598d9a3022d44888daaf2f6edc70c565add37fd9ebd5274cb6a198e52ade575b65948d73ac55b63e418a6e611676b46b45bac21ce5032145db3513b",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.12.3"
+      },
+      {
+        "id": "4ca4df5474ea4d2fa5af8d8243bcdb62",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-17T21:24:23.250544+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "f933f70f32d023920a06b656df322d8123f140f3dd30e7e4d2d4be205a853d9a022c0d2908d8f5cfb0b04da93f5276edb1a87627038892539404201456399008",
+        "jwt_key": "0036bcc3997f371505e76eb542bb92b8cfc37ba662442edfb08d018a46629f2659b74a253ac4175b4c8c371a02fbc4ebb6b2bcd87c768abf9e6ba7fb4e55eae2",
+        "last_used_at": "2024-12-17T21:24:23.250797+00:00",
+        "last_used_ip": "192.168.1.64",
+        "expire_at": 1742246663.250797,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "934cbb4c21134bfd83910c0752b8470e",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-19T19:04:38.126629+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "cb528e28a041b4cd008df0c89bf10063b0a4e39ea8329f23d249bcbd34a886a3f482bc93dd66acdbc8479b11f8072d6f347ca4ea1e49fef3c41894391fca29e2",
+        "jwt_key": "a410b25fed42978388bb206b805aef22cf924ce3a5d4fd359a8771a7f1239d5708be5fd46b5c60a5953628b1af70ad64e9db3dd031328ee5ec0fea5b25ecd807",
+        "last_used_at": "2024-12-20T21:29:05.813213+00:00",
+        "last_used_ip": "192.168.1.64",
+        "expire_at": 1742506145.813213,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "c5ffae91a2dd4cd2a6d4656eb19185e8",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-21T13:02:25.111130+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "56edd5059631e1431442a2cdf1ab457511e74aec9cd61db1b5b7655e23b79a9c5240d6383a10a47ea70b2fd92f395d58349f119a65f61b549838210dab227520",
+        "jwt_key": "2a737bd333b1cbc4f1cbf0fd2fc9208b0c2f6857ece8c779b811328aebeaf13d018584d6b58a92e0a2c7ab32374373ba030544e94af2433a50e279e1bb62a59e",
+        "last_used_at": "2024-12-23T19:46:10.420787+00:00",
+        "last_used_ip": "192.168.1.64",
+        "expire_at": 1742759170.420787,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "c766c0cd583c42cda1605cdc38dedae2",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-21T18:00:02.987570+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "1524ac5c57e8ffd2b57e0a8bb72c8cf2fabb409deaa27fbd527894662e013b47de502e268fdff4f7ebd7fe6da20d65a77243225edb7f0f9acd6e25ac721f17a1",
+        "jwt_key": "fefe41ac76abdd1fb1bd633fccb54fa323aa3c7cfdf475804957516689b0e3e9d9bca930129d547af3a66998207c0858379fae7eac6f24bf1f89e9f312b11763",
+        "last_used_at": "2024-12-24T10:13:59.548687+00:00",
+        "last_used_ip": "192.168.1.172",
+        "expire_at": 1742811239.548687,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "fef975afb73544a5afcdfb2f63eea76a",
+        "user_id": "0effdb90c3294166964c081a0e0f86ee",
+        "client_id": "http://rpi3.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-21T21:33:22.035912+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "4bc33344bca5eb614cec4bb109150294e80953632d3d092db3506b7affec539e1105cf5b9ed69f7754a833bb6974e4abad8c91795bc903c7e4f8292547391533",
+        "jwt_key": "8c68f5368e700b472b9cc17300985f956bcaff1caa63e4ed2efac7a54288b5347ce2bff411a6b21bd315715dd3d0214a2976177b4f0d81e7313a6b2f854c20f7",
+        "last_used_at": "2024-12-21T21:33:22.036079+00:00",
+        "last_used_ip": "192.168.1.64",
+        "expire_at": 1742592802.036079,
+        "credential_id": "8aebce8d07e9433fbae05a7617b4960b",
+        "version": "2024.12.4"
+      }
+    ]
+  }
+}

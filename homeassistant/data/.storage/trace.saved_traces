@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1734790026866": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "54fb22d3f03132685fafc665e18c0231",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-23T19:46:12.530975+00:00",
+            "finish": "2024-12-23T19:46:12.558653+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-23T19:46:12.531078+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ha_startup",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1734790026866",
+                      "last_triggered": "2024-12-22T14:36:21.535883+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "HA Startup"
+                    },
+                    "last_changed": "2024-12-23T19:46:08.936622+00:00",
+                    "last_reported": "2024-12-23T19:46:08.936622+00:00",
+                    "last_updated": "2024-12-23T19:46:08.936622+00:00",
+                    "context": {
+                      "id": "01JFTGWCX87BK003CH3AYYVXCB",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-12-23T19:46:12.531588+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JFTGWGDJC9DD7PYHPBPJZ43S",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "0",
+                      "topic": "pygpio/ping"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1734790026866",
+            "alias": "HA Startup",
+            "description": "pings pygpio on startup",
+            "triggers": [
+              {
+                "trigger": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "0",
+                  "topic": "pygpio/ping"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JFTGWGDJC9DD7PYHPBPJZ43S",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "54fb22d3f03132685fafc665e18c0231",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-23T19:46:12.530975+00:00",
+            "finish": "2024-12-23T19:46:12.558653+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting"
+        }
+      }
+    ]
+  }
+}

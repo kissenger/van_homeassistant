@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_new",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title",
+                  "icon": "mdi:ceiling-light-multiple",
+                  "tap_action": {
+                    "action": "none"
+                  },
+                  "badges": [],
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 1
+                  },
+                  "heading": "Lights"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "number.brightness_slider"
+                    }
+                  ],
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.ceiling_lights",
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 2
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.bed_lights",
+                  "icon": "mdi:lightbulb",
+                  "show_state": false,
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 2
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.fairy_lights",
+                  "icon": "mdi:lightbulb",
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 2
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.table_lights",
+                  "icon": "mdi:lightbulb",
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 2
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "switch.outside_lights",
+                  "icon": "mdi:lightbulb",
+                  "grid_options": {
+                    "rows": 2,
+                    "columns": 3
+                  }
+                }
+              ],
+              "column_span": 2
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

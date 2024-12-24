@@ -1,0 +1,91 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+mqtt:
+    - switch:
+        unique_id: ceiling_light
+        name: "Ceiling Lights"
+        command_topic: "lights/ceiling"
+        availability:
+            - topic: "gpio/available"
+        payload_on: "ON"
+        payload_off: "OFF"
+        optimistic: false
+        state_on: "ON"
+        state_off: "OFF"
+        qos: 0
+        retain: true
+    - switch:
+        unique_id: table_light
+        name: "Table Lights"
+        command_topic: "lights/table"
+        availability:
+            - topic: "gpio/available"
+        payload_on: "ON"
+        payload_off: "OFF"
+        optimistic: false
+        state_on: "ON"
+        state_off: "OFF"
+        qos: 0
+        retain: true
+    - switch:
+        unique_id: bed_lights
+        name: "Bed Lights"
+        command_topic: "lights/beds"
+        availability:
+            - topic: "gpio/available"
+        payload_on: "ON"
+        payload_off: "OFF"
+        optimistic: false
+        state_on: "ON"
+        state_off: "OFF"
+        qos: 0
+        retain: true
+    - switch:
+        unique_id: fairy_light
+        name: "Fairy Lights"
+        command_topic: "lights/fairy"
+        availability:
+            - topic: "gpio/available"
+        payload_on: "ON"
+        payload_off: "OFF"
+        optimistic: false
+        state_on: "ON"
+        state_off: "OFF"
+        qos: 0
+        retain: true
+    - switch:
+        unique_id: outside_light
+        name: "Outside Lights"
+        command_topic: "lights/outside"
+        availability:
+            - topic: "gpio/available"
+        payload_on: "ON"
+        payload_off: "OFF"
+        optimistic: false
+        state_on: "ON"
+        state_off: "OFF"
+        qos: 0
+        retain: true
+    - number:
+        unique_id: "brightness_slider"
+        name: "Brightness Slider"
+        command_topic: "lights/brightness/set"
+        state_topic: "lights/brightness/state"
+        availability:
+            - topic: "gpio/available"
+        min: 0
+        max: 100
+        step: 1
+        mode: slider
+        
+        

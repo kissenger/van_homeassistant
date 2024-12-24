@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "repairs.issue_registry",
+  "data": {
+    "issues": [
+      {
+        "created": "2024-12-17T21:36:06.349793+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_switch_mqtt"
+      },
+      {
+        "created": "2024-12-19T22:29:17.197776+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0x59e915bc414ce574"
+      },
+      {
+        "created": "2024-12-19T22:36:32.003685+00:00",
+        "dismissed_version": "2024.12.4",
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "-0x105a518e85690a0"
+      },
+      {
+        "created": "2024-12-21T20:05:45.169273+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "0x50eea06418ebfeb1"
+      },
+      {
+        "created": "2024-12-21T20:51:58.617974+00:00",
+        "dismissed_version": null,
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "-0x8b855ce0b56e02e"
+      }
+    ]
+  }
+}

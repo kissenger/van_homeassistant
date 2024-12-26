@@ -10,6 +10,7 @@
     metadata: {}
     data:
       evaluate_payload: false
-      qos: '0'
+      qos: '2'
       topic: pygpio/ping
+      retain: false
   mode: single

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_van",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "light.all_lights",
+                  "icon": "mdi:lightbulb",
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

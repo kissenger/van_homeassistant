@@ -11,84 +11,73 @@ script: !include scripts.yaml
 scene: !include scenes.yaml
 
 mqtt:
-    - switch:
+    - light:
+        unique_id: all_lights
+        name: "All Lights"
+        command_topic: "lights/all/set_state"
+        state_topic: "lights/all/get_state"
+        availability:
+            - topic: "gpio/available"
+        optimistic: false
+        qos: 0
+        retain: true
+    - light:
         unique_id: ceiling_light
         name: "Ceiling Lights"
-        command_topic: "lights/ceiling"
-        device_class: "switch"
+        command_topic: "lights/ceiling/set_state"
+        state_topic: "lights/ceiling/get_state"
         availability:
             - topic: "gpio/available"
-        payload_on: "ON"
-        payload_off: "OFF"
         optimistic: false
-        state_on: "ON"
-        state_off: "OFF"
         qos: 0
         retain: true
-    - switch:
+    - light:
         unique_id: table_light
-        name: "Table Lights"
-        command_topic: "lights/table"
-        device_class: "switch"
+        command_topic: "lights/table/set_state"
+        state_topic: "lights/table/get_state"
         availability:
             - topic: "gpio/available"
-        payload_on: "ON"
-        payload_off: "OFF"
         optimistic: false
-        state_on: "ON"
-        state_off: "OFF"
         qos: 0
         retain: true
-    - switch:
+    - light:
         unique_id: bed_lights
         name: "Bed Lights"
-        command_topic: "lights/beds"
-        device_class: "switch"
+        command_topic: "lights/beds/set_state"
+        state_topic: "lights/beds/get_state"
         availability:
             - topic: "gpio/available"
-        payload_on: "ON"
-        payload_off: "OFF"
         optimistic: false
-        state_on: "ON"
-        state_off: "OFF"
         qos: 0
         retain: true
-    - switch:
+    - light:
         unique_id: fairy_light
         name: "Fairy Lights"
-        command_topic: "lights/fairy"
-        device_class: "switch"
+        command_topic: "lights/fairy/set_state"
+        state_topic: "lights/fairy/get_state"
         availability:
             - topic: "gpio/available"
-        payload_on: "ON"
-        payload_off: "OFF"
         optimistic: false
-        state_on: "ON"
-        state_off: "OFF"
         qos: 0
         retain: true
-    - switch:
+    - light: 
         unique_id: outside_light
         name: "Outside Lights"
-        command_topic: "lights/outside"
-        device_class: "switch"
+        command_topic: "lights/outside/set_state"
+        state_topic: "lights/outside/get_state"
         availability:
             - topic: "gpio/available"
-        payload_on: "ON"
-        payload_off: "OFF"
         optimistic: false
-        state_on: "ON"
-        state_off: "OFF"
         qos: 0
         retain: true
     - number:
         unique_id: "brightness_slider"
         name: "Brightness Slider"
-        command_topic: "lights/brightness/set"
-        state_topic: "lights/brightness/state"
+        command_topic: "lights/all/set_brightness"
+        state_topic: "lights/all/get_brightness"
         availability:
             - topic: "gpio/available"
-        min: 0
+        min: 1
         max: 100
         step: 1
         mode: slider
@@ -97,7 +86,7 @@ mqtt:
         name: "Fridge Temperature"
         device_class: "temperature"
         state_class: "measurement"
-        state_topic: "temperature/fridge"
+        state_topic: "temperature/fridge/get_value"
         suggested_display_precision: 1
         unit_of_measurement: "°C"
         availability:
@@ -107,10 +96,10 @@ mqtt:
         name: "Fridge Vent Temperature"
         device_class: "temperature"
         state_class: "measurement"
-        state_topic: "temperature/fridge_vent"
+        state_topic: "temperature/fridge_vent/get_value"
         suggested_display_precision: 1
         unit_of_measurement: "°C"
         availability:
            - topic: "gpio/available"
-        
-        
+shell_command:
+    rpi_restart: sudo reboot now  

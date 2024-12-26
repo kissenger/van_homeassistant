@@ -14,13 +14,13 @@
         "show_in_sidebar": true
       },
       {
-        "id": "dashboard_new",
+        "id": "dashboard_van",
         "show_in_sidebar": true,
-        "icon": "mdi:van-utility",
-        "title": "NEW",
+        "icon": "mdi:van-passenger",
+        "title": "Van",
         "require_admin": false,
         "mode": "storage",
-        "url_path": "dashboard-new"
+        "url_path": "dashboard-van"
       }
     ]
   }

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import glob, sys, time, os, logging
 import paho.mqtt.client as mqtt
-import paho.mqtt.publish as publish
 from gpiozero.pins.pigpio import PiGPIOFactory
 from gpiozero import PWMOutputDevice
 from systemd.journal import JournalHandler
@@ -66,7 +65,8 @@ def set_light(location,command):
       if light["location"] == location:
          light["pwm"].value=int(dc)/100
          light["state"]=int(dc)/100
-         logger.info(" +++ Duty cycle for " + location + " light on pin " + str(light["pin"]) + " set to " + str(int(dc)/100))
+         publish_message("lights/" + location + "/get_state",command)
+         logger.info(" +++ duty cycle for " + location + " light on pin " + str(light["pin"]) + " set to " + str(int(dc)/100))
 
 def set_all_lights(command):
    global lights
@@ -76,7 +76,7 @@ def set_all_lights(command):
 def set_brightness(dc):
    global led_brightness, lights
    led_brightness=dc
-   client.publish("lights/brightness/state",dc,qos=0,retain=True)
+   publish_message("lights/all/get_brightness",dc)
    for light in lights:
       if light["state"] != 0:
          set_light(light["location"],"ON")
@@ -102,36 +102,44 @@ def get_temperatures():
    global temp_sensors
    for sensor in temp_sensors:
       temperature = read_temp(temp_sensors[sensor]["device_file"])
-      client.publish("temperature/" + sensor, temperature);
-      logger.info(" +++ published message: topic=temperature/" + sensor + " payload=" + str(temperature))
+      publish_message("temperature/" + sensor + "/get_value", temperature);
    
 # -------------------------
 # PROCESS INCOMING MESSAGES
 # -------------------------
 def on_message(client, userdata, msg):
+   logger.info(" +++ received topic=" + msg.topic + " payload=" + str(msg.payload))
 
+   # catch request for availability
+   if msg.topic == "pygpio/ping":
+      publish_message("gpio/available","online")
+   
    topic = msg.topic.split("/") 
+   device = topic[0]
+   location = topic[1]
+   action = topic[2]
    payload = msg.payload.decode("utf-8")
-   logger.info(" +++ received message: topic=" + msg.topic + " payload=" + payload)
 
-   if topic[0] == "lights":
-      if topic[1] == "brightness":
-         if topic[2] == "set":
-            set_brightness(payload)
-      else: 
-         set_light(topic[1],payload)
+   if device == "lights":
+      if location == "all":
+         match action:
+            case "set_brightness": set_brightness(payload)
+            case "set_state":      set_all_lights(payload)
+      else:
+         match action:
+            case "set_state":      set_light(location,payload)
 
-   if topic == "pygpio/hello":
-      logger.info(" +++ publishing to: gpio/available")
-      client.publish("gpio/available","online",qos=0,retain=True)
-
+def publish_message(topic, payload):
+   client.publish(topic, payload,qos=0,retain=True)
+   logger.info(" +++ published topic=" + topic + ", payload=" + str(payload))
+	
 # ----------------------------
 # CALLBACK FOR MQTT CONNECTION
 # ----------------------------
 def on_connect(client, userdata, flags, rc):
    if rc == 0:
       logger.info(" +++ connected to mosquitto host")
-      client.publish("gpio/available","online")
+      publish_message("gpio/available","online")
       client.subscribe(topics)
       set_brightness(50)
    else:
@@ -158,7 +166,8 @@ while True:
    except KeyboardInterrupt:
       logger.info(" +++ keyboard interrupt - cleaning up")
       set_all_lights("OFF")
-      client.publish("gpio/available","offline")
+      publish_message("gpio/available","offline")
+      time.sleep(0.1)
       client.disconnect(13)
       client.loop_stop()
       sys.exit(os.EX_OK)

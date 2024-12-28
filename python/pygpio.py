@@ -141,7 +141,7 @@ def on_connect(client, userdata, flags, rc):
       logger.info(" +++ connected to mosquitto host")
       publish_message("gpio/available","online")
       client.subscribe(topics)
-      set_brightness(50)
+      set_brightness(100)
    else:
       logger.info(" +++ failed to connect with code %d\n", rc)
 

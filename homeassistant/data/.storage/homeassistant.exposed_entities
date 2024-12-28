@@ -39,6 +39,13 @@
             "should_expose": false
           }
         }
+      },
+      "light.van_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
       }
     }
   }

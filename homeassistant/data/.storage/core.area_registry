@@ -7,13 +7,24 @@
       {
         "aliases": [],
         "floor_id": null,
+        "icon": "mdi:van-passenger",
+        "id": "bedroom",
+        "labels": [],
+        "name": "Van",
+        "picture": null,
+        "created_at": "2024-12-17T21:23:57.923591+00:00",
+        "modified_at": "2024-12-26T21:42:29.290278+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
         "icon": null,
         "id": "living_room",
         "labels": [],
         "name": "Living Room",
         "picture": null,
-        "created_at": "2024-12-17T21:11:40.333505+00:00",
-        "modified_at": "2024-12-17T21:11:40.333523+00:00"
+        "created_at": "2024-12-26T22:10:33.160072+00:00",
+        "modified_at": "2024-12-26T22:10:33.160083+00:00"
       },
       {
         "aliases": [],
@@ -23,19 +34,8 @@
         "labels": [],
         "name": "Kitchen",
         "picture": null,
-        "created_at": "2024-12-17T21:11:41.024804+00:00",
-        "modified_at": "2024-12-17T21:11:41.024828+00:00"
-      },
-      {
-        "aliases": [],
-        "floor_id": null,
-        "icon": null,
-        "id": "bedroom",
-        "labels": [],
-        "name": "Bedroom",
-        "picture": null,
-        "created_at": "2024-12-17T21:23:57.923591+00:00",
-        "modified_at": "2024-12-17T21:23:57.923617+00:00"
+        "created_at": "2024-12-26T22:10:34.178037+00:00",
+        "modified_at": "2024-12-26T22:10:34.178047+00:00"
       }
     ]
   }

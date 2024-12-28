@@ -1,0 +1,15 @@
+[Unit]
+Description = Python script monitoring touch screen events to allow screen dimming after timeout
+
+[Service]
+Type = simple
+ExecStart = python /home/gordon/proj/python/scrmgr.py
+WorkingDirectory = /home/gordon/proj/python
+User = gordon
+Restart = always
+RestartSec = 15
+SyslogIdentifier = scrmgr
+KillSignal=SIGINT
+
+[Install]
+WantedBy = multi-user.target

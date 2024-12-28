@@ -4,81 +4,91 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.gordon","state":"unknown","attributes":{"editable":true,"id":"gordon","device_trackers":[],"source":"person.gordon","user_id":"0effdb90c3294166964c081a0e0f86ee","friendly_name":"gordon"},"last_changed":"2024-12-26T21:07:19.489400+00:00","last_reported":"2024-12-26T21:07:19.489400+00:00","last_updated":"2024-12-26T21:07:19.489400+00:00","context":{"id":"01JG2CQ6A124W265Y0S1AWZ1Y5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.gordon","state":"unknown","attributes":{"editable":true,"id":"gordon","device_trackers":[],"user_id":"0effdb90c3294166964c081a0e0f86ee","friendly_name":"gordon"},"last_changed":"2024-12-26T22:48:06.270909+00:00","last_reported":"2024-12-26T22:48:38.401734+00:00","last_updated":"2024-12-26T22:48:38.401734+00:00","context":{"id":"01JG2JGPR14C2G829X00M6XV4C","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-26T21:07:25.337797+00:00","last_reported":"2024-12-26T21:07:25.337797+00:00","last_updated":"2024-12-26T21:07:25.337797+00:00","context":{"id":"01JG2CQC0S2DRW7ZD7R7NRJEHR","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_button.lights","state":"2024-12-26T21:49:02.597103+00:00","attributes":{"editable":true,"icon":"mdi:lightbulb","friendly_name":"Lights"},"last_changed":"2024-12-26T22:48:12.303702+00:00","last_reported":"2024-12-26T22:48:12.303702+00:00","last_updated":"2024-12-26T22:48:12.303702+00:00","context":{"id":"01JG2JFX8FFV54EX05JEE5YE79","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"automation.ha_startup","state":"on","attributes":{"id":"1734790026866","last_triggered":"2024-12-26T21:01:06.682754+00:00","mode":"single","current":0,"friendly_name":"HA Startup"},"last_changed":"2024-12-26T21:07:45.124887+00:00","last_reported":"2024-12-26T21:07:45.124887+00:00","last_updated":"2024-12-26T21:07:45.124887+00:00","context":{"id":"01JG2CQZB45JFB7QZEZ8WYMRRP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2024-12-26T22:48:31.934819+00:00","last_reported":"2024-12-26T22:48:31.934819+00:00","last_updated":"2024-12-26T22:48:31.934819+00:00","context":{"id":"01JG2JGGDYADEVRP3T42SYDV7N","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-26T21:07:47.866127+00:00","last_reported":"2024-12-26T21:07:47.866127+00:00","last_updated":"2024-12-26T21:07:47.866127+00:00","context":{"id":"01JG2CR20TPGJGXX3RNAG6MVAA","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2024-12-26T22:48:36.741817+00:00","last_reported":"2024-12-26T22:48:36.741817+00:00","last_updated":"2024-12-26T22:48:36.741817+00:00","context":{"id":"01JG2JGN45EDQA03WAFHZXNDP0","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"number.brightness_slider","state":"unavailable","attributes":{"min":1.0,"max":100.0,"step":1.0,"mode":"slider","friendly_name":"Brightness Slider"},"last_changed":"2024-12-26T21:07:47.986453+00:00","last_reported":"2024-12-26T21:07:48.010967+00:00","last_updated":"2024-12-26T21:07:47.986453+00:00","context":{"id":"01JG2CR24JTX6NY913GFHV0ED4","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.ha_startup","state":"on","attributes":{"id":"1734790026866","last_triggered":"2024-12-26T22:48:38.413484+00:00","mode":"single","current":0,"friendly_name":"HA Startup"},"last_changed":"2024-12-26T22:48:36.744538+00:00","last_reported":"2024-12-26T22:48:38.447143+00:00","last_updated":"2024-12-26T22:48:38.447143+00:00","context":{"id":"01JG2JGPRDWCA6DPV7QN6B11R8","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.fridge_temperature","state":"5.187","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Temperature"},"last_changed":"2024-12-28T20:48:26.416489+00:00","last_reported":"2024-12-28T20:48:26.416489+00:00","last_updated":"2024-12-28T20:48:26.416489+00:00","context":{"id":"01JG7GE1SGDSMXYTJEBBAXJHCB","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "5.187",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.fridge_vent_temperature","state":"18.062","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Vent Temperature"},"last_changed":"2024-12-28T20:48:03.980428+00:00","last_reported":"2024-12-28T20:48:03.980428+00:00","last_updated":"2024-12-28T20:48:03.980428+00:00","context":{"id":"01JG7GDBWCYFYY82KSRNHGTXCW","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "18.062",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
+    },
+    {
+      "state": {"entity_id":"number.brightness_slider","state":"46","attributes":{"min":1.0,"max":100.0,"step":1.0,"mode":"slider","friendly_name":"Brightness Slider"},"last_changed":"2024-12-28T20:21:15.360230+00:00","last_reported":"2024-12-28T20:21:15.360230+00:00","last_updated":"2024-12-28T20:21:15.360230+00:00","context":{"id":"01JG7EW8YQ7YWFB1FPAYD7BWBA","parent_id":null,"user_id":"0effdb90c3294166964c081a0e0f86ee"}},
       "extra_data": {
         "native_max_value": 100.0,
         "native_min_value": 1.0,
         "native_step": 1.0,
         "native_unit_of_measurement": null,
-        "native_value": null
+        "native_value": 46
       },
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"sensor.fridge_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Temperature"},"last_changed":"2024-12-26T21:07:47.988836+00:00","last_reported":"2024-12-26T21:07:48.011115+00:00","last_updated":"2024-12-26T21:07:47.988836+00:00","context":{"id":"01JG2CR24MTKVGEHECTBQHG21S","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": null,
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.fridge_vent_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Fridge Vent Temperature"},"last_changed":"2024-12-26T21:07:47.989427+00:00","last_reported":"2024-12-26T21:07:48.011185+00:00","last_updated":"2024-12-26T21:07:47.989427+00:00","context":{"id":"01JG2CR24N6HKQ6VATJ9G6JD9Y","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": null,
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
-    },
-    {
-      "state": {"entity_id":"light.all_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"All Lights","supported_features":0},"last_changed":"2024-12-26T21:07:48.001347+00:00","last_reported":"2024-12-26T21:07:48.011278+00:00","last_updated":"2024-12-26T21:07:48.001347+00:00","context":{"id":"01JG2CR2515PENMMM349A9WYZ9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.ceiling_lights","state":"on","attributes":{"supported_color_modes":["onoff"],"color_mode":"onoff","friendly_name":"Ceiling Lights","supported_features":0},"last_changed":"2024-12-28T20:21:18.175281+00:00","last_reported":"2024-12-28T20:21:18.175281+00:00","last_updated":"2024-12-28T20:21:18.175281+00:00","context":{"id":"01JG7EWBKS65SKB0SQMCHGD0T6","parent_id":null,"user_id":"0effdb90c3294166964c081a0e0f86ee"}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"light.ceiling_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"icon":"mdi:lightbulb","friendly_name":"Ceiling Lights","supported_features":0},"last_changed":"2024-12-26T21:07:48.002041+00:00","last_reported":"2024-12-26T21:07:48.011467+00:00","last_updated":"2024-12-26T21:07:48.002041+00:00","context":{"id":"01JG2CR252D3CRFPCTK4Z5TCSA","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.mqtt_lightentity","state":"on","attributes":{"supported_color_modes":["onoff"],"color_mode":"onoff","friendly_name":"MQTT LightEntity","supported_features":0},"last_changed":"2024-12-28T19:14:48.988975+00:00","last_reported":"2024-12-28T19:14:48.988975+00:00","last_updated":"2024-12-28T19:14:48.988975+00:00","context":{"id":"01JG7B2M0W21FQ3J5ZRJ35ASA6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"light.table_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"MQTT LightEntity","supported_features":0},"last_changed":"2024-12-26T21:07:48.002579+00:00","last_reported":"2024-12-26T21:07:48.011539+00:00","last_updated":"2024-12-26T21:07:48.002579+00:00","context":{"id":"01JG2CR2525T18F5QB00QPM3KT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.bed_lights","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"Bed Lights","supported_features":0},"last_changed":"2024-12-28T20:21:18.300447+00:00","last_reported":"2024-12-28T20:21:18.300447+00:00","last_updated":"2024-12-28T20:21:18.300447+00:00","context":{"id":"01JG7EWBTPS2C96R6XG8QQ1EMH","parent_id":null,"user_id":"0effdb90c3294166964c081a0e0f86ee"}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"light.bed_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"Bed Lights","supported_features":0},"last_changed":"2024-12-26T21:07:48.003082+00:00","last_reported":"2024-12-26T21:07:48.011620+00:00","last_updated":"2024-12-26T21:07:48.003082+00:00","context":{"id":"01JG2CR253A28PW4QPJZGF2M41","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.fairy_lights","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"Fairy Lights","supported_features":0},"last_changed":"2024-12-28T20:39:13.906048+00:00","last_reported":"2024-12-28T20:39:13.906048+00:00","last_updated":"2024-12-28T20:39:13.906048+00:00","context":{"id":"01JG7FX678BGP0X31264XMRYP3","parent_id":null,"user_id":"0effdb90c3294166964c081a0e0f86ee"}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"light.fairy_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"Fairy Lights","supported_features":0},"last_changed":"2024-12-26T21:07:48.003618+00:00","last_reported":"2024-12-26T21:07:48.011685+00:00","last_updated":"2024-12-26T21:07:48.003618+00:00","context":{"id":"01JG2CR253QVZDN3AAABNS15GG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.outside_lights","state":"on","attributes":{"supported_color_modes":["onoff"],"color_mode":"onoff","friendly_name":"Outside Lights","supported_features":0},"last_changed":"2024-12-28T19:14:49.004259+00:00","last_reported":"2024-12-28T19:14:49.004259+00:00","last_updated":"2024-12-28T19:14:49.004259+00:00","context":{"id":"01JG7B2M1CRPH12S5Y1Q0617JN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-28T20:48:38.573729+00:00"
     },
     {
-      "state": {"entity_id":"light.outside_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"Outside Lights","supported_features":0},"last_changed":"2024-12-26T21:07:48.004095+00:00","last_reported":"2024-12-26T21:07:48.011748+00:00","last_updated":"2024-12-26T21:07:48.004095+00:00","context":{"id":"01JG2CR2548NRTNPQEYYHTV92B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.all_lights","state":"unavailable","attributes":{"supported_color_modes":["onoff"],"friendly_name":"All Lights","supported_features":0},"last_changed":"2024-12-26T22:47:31.726377+00:00","last_reported":"2024-12-26T22:47:31.726377+00:00","last_updated":"2024-12-26T22:47:31.726377+00:00","context":{"id":"01JG2JENMEF7F4ZA2DMCF2AGX2","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T21:07:48.018052+00:00"
+      "last_seen": "2024-12-26T22:47:31.796462+00:00"
+    },
+    {
+      "state": {"entity_id":"light.table_lights","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"MQTT LightEntity","supported_features":0},"last_changed":"2024-12-26T22:18:40.419954+00:00","last_reported":"2024-12-26T22:18:40.419954+00:00","last_updated":"2024-12-26T22:18:40.419954+00:00","context":{"id":"01JG2GSTX3E79BG74C3ET60NFX","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-26T22:23:33.142084+00:00"
     },
     {
       "state": {"entity_id":"switch.table_lights","state":"on","attributes":{"assumed_state":true,"device_class":"switch","friendly_name":"Table Lights"},"last_changed":"2024-12-26T19:21:44.119789+00:00","last_reported":"2024-12-26T19:21:44.119789+00:00","last_updated":"2024-12-26T19:21:44.119789+00:00","context":{"id":"01JG26NVDQD13P0KXT394KJ4E7","parent_id":null,"user_id":null}},
@@ -111,9 +121,19 @@
       "last_seen": "2024-12-21T20:51:39.010310+00:00"
     },
     {
-      "state": {"entity_id":"light.ceiling_lights_2","state":"unknown","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"assumed_state":true,"friendly_name":"Ceiling Lights","supported_features":0},"last_changed":"2024-12-26T18:37:17.889941+00:00","last_reported":"2024-12-26T18:37:17.889941+00:00","last_updated":"2024-12-26T18:37:17.889941+00:00","context":{"id":"01JG244FP1RSGA3TN666RR4BWJ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.ceiling_lights_2","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"Ceiling Lights","supported_features":0},"last_changed":"2024-12-26T22:23:56.615876+00:00","last_reported":"2024-12-26T22:23:56.615876+00:00","last_updated":"2024-12-26T22:23:56.615876+00:00","context":{"id":"01JG2H3FP7ZG7C1SZ55DRRK207","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-12-26T18:43:16.778579+00:00"
+      "last_seen": "2024-12-26T22:25:22.563666+00:00"
+    },
+    {
+      "state": {"entity_id":"light.outside_lights_2","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"Outside Lights","supported_features":0},"last_changed":"2024-12-26T22:23:57.084077+00:00","last_reported":"2024-12-26T22:23:57.084077+00:00","last_updated":"2024-12-26T22:23:57.084077+00:00","context":{"id":"01JG2H3G4WQNKZ4F6CDBDWH2Y5","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-26T22:25:04.667643+00:00"
+    },
+    {
+      "state": {"entity_id":"light.fairy_lights_2","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"friendly_name":"Fairy Lights","supported_features":0},"last_changed":"2024-12-26T22:23:57.042405+00:00","last_reported":"2024-12-26T22:23:57.042405+00:00","last_updated":"2024-12-26T22:23:57.042405+00:00","context":{"id":"01JG2H3G3J241WEADN0CSAVAXN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-12-26T22:25:34.251581+00:00"
     }
   ]
 }

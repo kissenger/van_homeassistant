@@ -1,0 +1,30 @@
+2024-12-26 22:51:08.891 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-26 22:51:10.274 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-26 22:51:23.647 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 08:14:19.228 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 08:14:20.199 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:01.853 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:13.507 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:14.217 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:14.729 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:15.241 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:15.653 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:16.155 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:48:16.553 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:50:46.696 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:50:54.588 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:50:55.815 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:50:57.050 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:50:57.886 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:53:13.811 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-27 19:53:14.365 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 02:28:54.444 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV(192.168.1.69):8009] Failed to connect to service HostServiceInfo(host='192.168.1.69', port=8009), retrying in 5.0s
+2024-12-28 09:38:30.580 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV(192.168.1.69):8009] Error reading from socket: socket connection broken
+2024-12-28 17:21:03.308 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:04.742 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:05.243 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:10.383 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:11.748 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:12.250 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 17:21:12.970 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available
+2024-12-28 20:21:18.074 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.table_lights are missing or not currently available

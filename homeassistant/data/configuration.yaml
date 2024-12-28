@@ -12,17 +12,7 @@ scene: !include scenes.yaml
 
 mqtt:
     - light:
-        unique_id: all_lights
-        name: "All Lights"
-        command_topic: "lights/all/set_state"
-        state_topic: "lights/all/get_state"
-        availability:
-            - topic: "gpio/available"
-        optimistic: false
-        qos: 0
-        retain: true
-    - light:
-        unique_id: ceiling_light
+        unique_id: ceiling_lights
         name: "Ceiling Lights"
         command_topic: "lights/ceiling/set_state"
         state_topic: "lights/ceiling/get_state"
@@ -32,7 +22,7 @@ mqtt:
         qos: 0
         retain: true
     - light:
-        unique_id: table_light
+        unique_id: table_lights
         command_topic: "lights/table/set_state"
         state_topic: "lights/table/get_state"
         availability:
@@ -51,7 +41,7 @@ mqtt:
         qos: 0
         retain: true
     - light:
-        unique_id: fairy_light
+        unique_id: fairy_lights
         name: "Fairy Lights"
         command_topic: "lights/fairy/set_state"
         state_topic: "lights/fairy/get_state"
@@ -61,7 +51,7 @@ mqtt:
         qos: 0
         retain: true
     - light: 
-        unique_id: outside_light
+        unique_id: outside_lights
         name: "Outside Lights"
         command_topic: "lights/outside/set_state"
         state_topic: "lights/outside/get_state"
@@ -103,3 +93,12 @@ mqtt:
            - topic: "gpio/available"
 shell_command:
     rpi_restart: sudo reboot now  
+light:
+    - platform: group
+      name: "Van inside lights"
+      unique_id: "all_van_lights"
+      entities:
+           - light.ceiling_lights
+           - light.table_lights
+           - light.fairy_lights
+           - light.bed_lights

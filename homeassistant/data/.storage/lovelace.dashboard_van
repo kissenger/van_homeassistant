@@ -18,26 +18,10 @@
                   "tap_action": {
                     "action": "toggle"
                   },
-                  "entity": "light.outside_lights",
+                  "entity": "light.van_lights",
+                  "show_state": false,
                   "grid_options": {
                     "columns": 3,
-                    "rows": 2
-                  }
-                },
-                {
-                  "features": [
-                    {
-                      "style": "slider",
-                      "type": "numeric-input"
-                    }
-                  ],
-                  "type": "tile",
-                  "entity": "number.brightness_slider",
-                  "name": "Dimmer",
-                  "icon": "mdi:brightness-6",
-                  "color": "accent",
-                  "grid_options": {
-                    "columns": 18,
                     "rows": 2
                   }
                 },
@@ -48,8 +32,7 @@
                   "tap_action": {
                     "action": "toggle"
                   },
-                  "entity": "light.van_lights",
-                  "show_state": false,
+                  "entity": "light.outside_lights",
                   "grid_options": {
                     "columns": 3,
                     "rows": 2
@@ -93,6 +76,29 @@
                     "columns": 3,
                     "rows": 2
                   }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "light.table_lights",
+                  "grid_options": {
+                    "columns": 3,
+                    "rows": 2
+                  }
+                },
+                {
+                  "type": "tile",
+                  "entity": "number.brightness_slider",
+                  "features": [
+                    {
+                      "style": "slider",
+                      "type": "numeric-input"
+                    }
+                  ]
                 }
               ],
               "column_span": 1
@@ -101,44 +107,8 @@
               "type": "grid",
               "cards": [
                 {
-                  "chart_type": "line",
-                  "period": "hour",
-                  "type": "statistics-graph",
-                  "entities": [
-                    "sensor.fridge_temperature",
-                    "sensor.fridge_vent_temperature"
-                  ],
-                  "stat_types": [
-                    "mean",
-                    "min",
-                    "max"
-                  ],
-                  "days_to_show": 2
-                },
-                {
-                  "graph": "line",
-                  "type": "sensor",
-                  "entity": "sensor.fridge_temperature",
-                  "detail": 2,
-                  "hours_to_show": 6
-                },
-                {
-                  "graph": "line",
-                  "type": "sensor",
-                  "entity": "sensor.fridge_vent_temperature",
-                  "detail": 2,
-                  "hours_to_show": 6
-                },
-                {
-                  "type": "statistic",
-                  "entity": "sensor.fridge_temperature",
-                  "period": {
-                    "calendar": {
-                      "period": "day"
-                    }
-                  },
-                  "stat_type": "max",
-                  "name": "Max"
+                  "type": "heading",
+                  "heading": "New section"
                 }
               ]
             }

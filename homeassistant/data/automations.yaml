@@ -13,4 +13,5 @@
       qos: '2'
       topic: pygpio/ping
       retain: false
+      payload: None
   mode: single

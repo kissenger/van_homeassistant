@@ -3,12 +3,6 @@
   "minor_version": 1,
   "key": "input_button",
   "data": {
-    "items": [
-      {
-        "id": "lights",
-        "name": "Lights",
-        "icon": "mdi:lightbulb"
-      }
-    ]
+    "items": []
   }
 }

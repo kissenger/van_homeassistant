@@ -7,12 +7,12 @@
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "e8a855e414fc26c5574f12896e24ed73",
+          "run_id": "fc852fdec48df47fd3962bd543e2bcb4",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2024-12-26T22:27:06.408468+00:00",
-            "finish": "2024-12-26T22:27:06.443351+00:00"
+            "start": "2024-12-29T20:49:05.877824+00:00",
+            "finish": "2024-12-29T20:49:06.101009+00:00"
           },
           "domain": "automation",
           "item_id": "1734790026866",
@@ -21,23 +21,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2024-12-26T22:27:06.408566+00:00",
+                "timestamp": "2024-12-29T20:49:05.877938+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ha_startup",
                     "state": "on",
                     "attributes": {
                       "id": "1734790026866",
-                      "last_triggered": "2024-12-26T22:23:51.245659+00:00",
+                      "last_triggered": "2024-12-29T20:33:32.001336+00:00",
                       "mode": "single",
                       "current": 0,
                       "friendly_name": "HA Startup"
                     },
-                    "last_changed": "2024-12-26T22:27:06.310577+00:00",
-                    "last_reported": "2024-12-26T22:27:06.310577+00:00",
-                    "last_updated": "2024-12-26T22:27:06.310577+00:00",
+                    "last_changed": "2024-12-29T20:49:03.844738+00:00",
+                    "last_reported": "2024-12-29T20:49:03.844738+00:00",
+                    "last_updated": "2024-12-29T20:49:03.844738+00:00",
                     "context": {
-                      "id": "01JG2H98Y6E4V0TPBVTSFTD8QX",
+                      "id": "01JGA2VXB443FF1R6FX0QEE4Z6",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -56,10 +56,10 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2024-12-26T22:27:06.409143+00:00",
+                "timestamp": "2024-12-29T20:49:05.878633+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01JG2H991835RJHF1FHC2JYCFA",
+                    "id": "01JGA2VZANXRYGYPDCE6TPNWR9",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -72,7 +72,8 @@
                       "evaluate_payload": false,
                       "qos": "2",
                       "topic": "pygpio/ping",
-                      "retain": false
+                      "retain": false,
+                      "payload": "None"
                     },
                     "target": {}
                   },
@@ -100,7 +101,8 @@
                   "evaluate_payload": false,
                   "qos": "2",
                   "topic": "pygpio/ping",
-                  "retain": false
+                  "retain": false,
+                  "payload": "None"
                 }
               }
             ],
@@ -108,19 +110,519 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01JG2H991835RJHF1FHC2JYCFA",
+            "id": "01JGA2VZANXRYGYPDCE6TPNWR9",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "e8a855e414fc26c5574f12896e24ed73",
+          "run_id": "fc852fdec48df47fd3962bd543e2bcb4",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2024-12-26T22:27:06.408468+00:00",
-            "finish": "2024-12-26T22:27:06.443351+00:00"
+            "start": "2024-12-29T20:49:05.877824+00:00",
+            "finish": "2024-12-29T20:49:06.101009+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3904b6df452b936ee2395654c0566192",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:01:35.263261+00:00",
+            "finish": "2024-12-29T21:01:35.518419+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-29T21:01:35.263519+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ha_startup",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1734790026866",
+                      "last_triggered": "2024-12-29T20:49:05.878107+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "HA Startup"
+                    },
+                    "last_changed": "2024-12-29T21:01:33.418843+00:00",
+                    "last_reported": "2024-12-29T21:01:33.418843+00:00",
+                    "last_updated": "2024-12-29T21:01:33.418843+00:00",
+                    "context": {
+                      "id": "01JGA3JSBA5Y3FB9130MXAK04W",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-12-29T21:01:35.265118+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JGA3JV4Z84PZH7YC5M56RE45",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "2",
+                      "topic": "pygpio/ping",
+                      "retain": false,
+                      "payload": "None"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1734790026866",
+            "alias": "HA Startup",
+            "description": "pings pygpio on startup",
+            "triggers": [
+              {
+                "trigger": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "2",
+                  "topic": "pygpio/ping",
+                  "retain": false,
+                  "payload": "None"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JGA3JV4Z84PZH7YC5M56RE45",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3904b6df452b936ee2395654c0566192",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:01:35.263261+00:00",
+            "finish": "2024-12-29T21:01:35.518419+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3cdf293bf01fb72e3c94c501f8968858",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:06:58.150952+00:00",
+            "finish": "2024-12-29T21:06:58.383501+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-29T21:06:58.151072+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ha_startup",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1734790026866",
+                      "last_triggered": "2024-12-29T21:01:35.264028+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "HA Startup"
+                    },
+                    "last_changed": "2024-12-29T21:06:54.482625+00:00",
+                    "last_reported": "2024-12-29T21:06:54.482625+00:00",
+                    "last_updated": "2024-12-29T21:06:54.482625+00:00",
+                    "context": {
+                      "id": "01JGA3WJWJT0575WRMQXQZC7CF",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-12-29T21:06:58.151821+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JGA3WPF6FCSZW6GPKD4WXC54",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "2",
+                      "topic": "pygpio/ping",
+                      "retain": false,
+                      "payload": "None"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1734790026866",
+            "alias": "HA Startup",
+            "description": "pings pygpio on startup",
+            "triggers": [
+              {
+                "trigger": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "2",
+                  "topic": "pygpio/ping",
+                  "retain": false,
+                  "payload": "None"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JGA3WPF6FCSZW6GPKD4WXC54",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3cdf293bf01fb72e3c94c501f8968858",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:06:58.150952+00:00",
+            "finish": "2024-12-29T21:06:58.383501+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "d9a09352cbcafbcdfe29a34cb02d5393",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:47:45.666964+00:00",
+            "finish": "2024-12-29T21:47:45.945707+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-29T21:47:45.667125+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ha_startup",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1734790026866",
+                      "last_triggered": "2024-12-29T21:06:58.151268+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "HA Startup"
+                    },
+                    "last_changed": "2024-12-29T21:47:44.696495+00:00",
+                    "last_reported": "2024-12-29T21:47:44.696495+00:00",
+                    "last_updated": "2024-12-29T21:47:44.696495+00:00",
+                    "context": {
+                      "id": "01JGA67BNRPAHW2THWYBHM1X8F",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-12-29T21:47:45.669452+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JGA67CM24C9NEVYA2EBTZS8M",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "2",
+                      "topic": "pygpio/ping",
+                      "retain": false,
+                      "payload": "None"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1734790026866",
+            "alias": "HA Startup",
+            "description": "pings pygpio on startup",
+            "triggers": [
+              {
+                "trigger": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "2",
+                  "topic": "pygpio/ping",
+                  "retain": false,
+                  "payload": "None"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JGA67CM24C9NEVYA2EBTZS8M",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "d9a09352cbcafbcdfe29a34cb02d5393",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:47:45.666964+00:00",
+            "finish": "2024-12-29T21:47:45.945707+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "850e8f4437939ccb1a78d5d4b6552cab",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:50:39.021549+00:00",
+            "finish": "2024-12-29T21:50:39.127281+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1734790026866",
+          "trigger": "Home Assistant starting",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-12-29T21:50:39.021771+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ha_startup",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1734790026866",
+                      "last_triggered": "2024-12-29T21:47:45.667336+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "HA Startup"
+                    },
+                    "last_changed": "2024-12-29T21:50:36.333557+00:00",
+                    "last_reported": "2024-12-29T21:50:36.333557+00:00",
+                    "last_updated": "2024-12-29T21:50:36.333557+00:00",
+                    "context": {
+                      "id": "01JGA6CK9DQETRSJW1FN47845V",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "homeassistant",
+                    "event": "start",
+                    "description": "Home Assistant starting"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-12-29T21:50:39.022977+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JGA6CNXD4ZZ5PYYGTX3YVF5A",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "evaluate_payload": false,
+                      "qos": "2",
+                      "topic": "pygpio/ping",
+                      "retain": false,
+                      "payload": "None"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1734790026866",
+            "alias": "HA Startup",
+            "description": "pings pygpio on startup",
+            "triggers": [
+              {
+                "trigger": "homeassistant",
+                "event": "start"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "mqtt.publish",
+                "metadata": {},
+                "data": {
+                  "evaluate_payload": false,
+                  "qos": "2",
+                  "topic": "pygpio/ping",
+                  "retain": false,
+                  "payload": "None"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JGA6CNXD4ZZ5PYYGTX3YVF5A",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "850e8f4437939ccb1a78d5d4b6552cab",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-12-29T21:50:39.021549+00:00",
+            "finish": "2024-12-29T21:50:39.127281+00:00"
           },
           "domain": "automation",
           "item_id": "1734790026866",

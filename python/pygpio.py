@@ -8,10 +8,10 @@ from systemd.journal import JournalHandler
 # -----------------------------------
 # CONFIGURE LOGGING TO SYSTEM JOURNAL
 # -----------------------------------
-logging.basicConfig()
-logger = logging.getLogger('pygpio.py')
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger('pygpio')
+logger.propagate = False
 logger.addHandler(JournalHandler())
-logger.setLevel(logging.INFO)
 logger.info(" +++ pygpio started")
 
 # -------------- 
@@ -20,21 +20,21 @@ logger.info(" +++ pygpio started")
 client = mqtt.Client()
 broker_host = "localhost"
 broker_port =  1883
-topics = [("lights/#",0),("pygpio/#",0)]
+topics = [("lights/#",0),("pygpio/ping",0)]
 
 # --------------
 # CONFIGURE GPIO
 # --------------
-lights=[
-   {"location": "ceiling", "pin":  5, "state": 0},
-   {"location": "table",   "pin":  6, "state": 0},
-   {"location": "beds",    "pin": 13, "state": 0},
-   {"location": "fairy",   "pin": 19, "state": 0},
-   {"location": "outside", "pin": 26, "state": 0}
-]
-for index,light in enumerate(lights):
-   print(light)
-   light.update({"pwm": PWMOutputDevice(light["pin"],frequency=500,pin_factory=PiGPIOFactory())})
+lights={
+   "ceiling": {"pin": 5 , "state": 0, "dimmable": True},
+   "table":   {"pin": 6 , "state": 0, "dimmable": True},
+   "beds":    {"pin": 13, "state": 0, "dimmable": True},
+   "fairy":   {"pin": 19, "state": 0, "dimmable": False},
+   "outside": {"pin": 26, "state": 0, "dimmable": False},
+}
+
+for light in lights:
+   lights[light].update({"pwm": PWMOutputDevice(lights[light]["pin"],frequency=500,pin_factory=PiGPIOFactory())})
 
 # -----------------
 # Configure DS18B20
@@ -61,25 +61,23 @@ def set_light(location,command):
    global lights
    global led_brightness
    dc = 0 if command == "OFF" else led_brightness
-   for light in lights:
-      if light["location"] == location:
-         light["pwm"].value=int(dc)/100
-         light["state"]=int(dc)/100
-         publish_message("lights/" + location + "/get_state",command)
-         logger.info(" +++ duty cycle for " + location + " light on pin " + str(light["pin"]) + " set to " + str(int(dc)/100))
+   lights[location]["pwm"]  =int(dc)/100
+   lights[location]["state"]=int(dc)/100
+   publish_message("lights/state/" + location,command)
+   logger.info(" +++ duty cycle for " + location + " light on pin " + str(lights[location]["pin"]) + " set to " + str(int(dc)/100))
 
 def set_all_lights(command):
    global lights
    for light in lights: 
-      set_light(light["location"],command)
+      set_light(light,command)
 
 def set_brightness(dc):
    global led_brightness, lights
    led_brightness=dc
-   publish_message("lights/all/get_brightness",dc)
+   publish_message("lights/state_brightness",dc)
    for light in lights:
-      if light["state"] != 0:
-         set_light(light["location"],"ON")
+      if (lights[light]["state"] != 0) and (lights[light]["dimmable"] == True):
+         set_light(light,"ON")
 
 # ---------------------
 # FUNCTIONS FOR DS18B20 
@@ -102,7 +100,7 @@ def get_temperatures():
    global temp_sensors
    for sensor in temp_sensors:
       temperature = read_temp(temp_sensors[sensor]["device_file"])
-      publish_message("temperature/" + sensor + "/get_value", temperature);
+      publish_message("temperature/" + sensor + "/value", temperature);
    
 # -------------------------
 # PROCESS INCOMING MESSAGES
@@ -116,21 +114,24 @@ def on_message(client, userdata, msg):
    
    topic = msg.topic.split("/") 
    device = topic[0]
-   location = topic[1]
-   action = topic[2]
+   action = topic[1]
+   try:
+      location = topic[2]
+   except:
+      pass 
    payload = msg.payload.decode("utf-8")
 
    if device == "lights":
-      if location == "all":
-         match action:
-            case "set_brightness": set_brightness(payload)
-            case "set_state":      set_all_lights(payload)
-      else:
-         match action:
-            case "set_state":      set_light(location,payload)
+      if action == "set_brightness":
+         set_brightness(payload)
+      elif action == "set_state":
+         if location == "all":
+            set_all_lights(payload)
+         else: 
+            set_light(location,payload)
 
 def publish_message(topic, payload):
-   client.publish(topic, payload,qos=0,retain=True)
+   client.publish(topic, payload,qos=2,retain=True)
    logger.info(" +++ published topic=" + topic + ", payload=" + str(payload))
 	
 # ----------------------------

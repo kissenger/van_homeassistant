@@ -1,3 +1,4 @@
 mosquitto/data
 mosquitto/log
 homeassistant/data/*.db
+homeassistant/data/.cache*

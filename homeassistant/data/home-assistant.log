@@ -1,6 +1,0 @@
-2024-12-29 21:56:00.469 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.van_lights are missing or not currently available
-2024-12-29 21:56:01.126 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.van_lights are missing or not currently available
-2024-12-29 21:56:03.991 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.van_lights are missing or not currently available
-2024-12-29 21:56:07.920 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.van_lights are missing or not currently available
-2024-12-29 22:00:36.873 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities light.van_lights are missing or not currently available
-2024-12-30 04:16:15.977 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV(192.168.1.69):8009] Failed to connect to service HostServiceInfo(host='192.168.1.69', port=8009), retrying in 5.0s

@@ -2,3 +2,5 @@ mosquitto/data
 mosquitto/log
 homeassistant/data/*.db*
 homeassistant/data/.cache*
+homeassistant/data/secrets.yaml
+homeassistant/data/log*
